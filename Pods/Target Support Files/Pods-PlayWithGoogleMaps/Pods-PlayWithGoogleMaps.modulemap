@@ -1,0 +1,6 @@
+framework module Pods_PlayWithGoogleMaps {
+  umbrella header "Pods-PlayWithGoogleMaps-umbrella.h"
+
+  export *
+  module * { export * }
+}
