@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Wj-ze-Ww1" customClass="GMSMapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wj-ze-Ww1" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3h-uA-w50">
@@ -37,8 +36,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="4Wj-ze-Ww1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4H5-cV-seo"/>
                             <constraint firstItem="q3h-uA-w50" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="Md4-U2-X27"/>
                             <constraint firstItem="q3h-uA-w50" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="Mfk-JS-Fvv"/>
+                            <constraint firstAttribute="bottom" secondItem="4Wj-ze-Ww1" secondAttribute="bottom" id="ZTI-gv-uQx"/>
+                            <constraint firstItem="4Wj-ze-Ww1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aLD-eD-ie8"/>
+                            <constraint firstItem="4Wj-ze-Ww1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="agd-Fu-czD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q3h-uA-w50" secondAttribute="trailing" constant="15" id="mTq-ou-5F9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

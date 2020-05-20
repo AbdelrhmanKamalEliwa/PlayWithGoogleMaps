@@ -68,7 +68,7 @@ extension MapViewController: GMSAutocompleteViewControllerDelegate {
         marker.title = "Location"
         marker.snippet = place.name
         
-        let markerImage = UIImage(named: "icon_offer_pickup")!
+        let markerImage = UIImage(named: "pickup-icon")!
         let markerView = UIImageView(image: markerImage)
         marker.iconView = markerView
         marker.map = self.mapView
